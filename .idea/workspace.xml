@@ -6,15 +6,25 @@
   <component name="ChangeListManager">
     <list default="true" id="f95150c9-60ba-4110-834c-daffa03e3ddc" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/main/java/ua/com/marketplace/armordrive/ArmorDriveJavaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/test/java/ua/com/marketplace/armordrive/ArmorDriveJavaApplicationTests.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ArmorDriveJava/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/ArmorDriveJava/HELP.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +32,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ArmorDriveJava" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="enabledProfiles">
+      <list>
+        <option value="default" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="2gWOU5OPukmyRMep3MSWhDtIext" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -35,15 +57,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/workspace/ArmorDriveMarketplace/ArmorDriveJava",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\workspace\ArmorDriveMarketplace\ArmorDriveJava" />
+      <recent name="C:\workspace\ArmorDriveMarketplace\ArmorDriveJava\src\main\resources" />
+      <recent name="C:\workspace\ArmorDriveMarketplace\ArmorDriveJava\src\main\java\ua\com\marketplace\armordrive" />
+      <recent name="C:\workspace\ArmorDriveMarketplace\armor_drive_react" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ArmorDriveJavaApplication">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
     <configuration name="ArmorDriveJavaApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="ArmorDriveJava" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ua.com.marketplace.armordrive.ArmorDriveJavaApplication" />
@@ -60,7 +104,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715809882113</updated>
-      <workItem from="1715809883922" duration="177000" />
+      <workItem from="1715809883922" duration="5896000" />
     </task>
     <servers />
   </component>

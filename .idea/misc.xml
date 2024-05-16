@@ -6,6 +6,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ArmorDriveJava/pom.xml" />
+        <option value="$PROJECT_DIR$/armor_drive_react/pom.xml" />
       </list>
     </option>
   </component>
