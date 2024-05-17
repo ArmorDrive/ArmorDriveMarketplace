@@ -8,11 +8,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class HomeController {
-    @CrossOrigin(origins = "http://localhost:3000")
-    @GetMapping("/")
+    @GetMapping("/api/welcome_message")
     @ResponseBody
     public String index() {
-        return "Welcome to Armor Drive Marketplace!!!!!Work!!!!";
+        return "Welcome to Armor Drive Marketplace!";
     }
 
 }
