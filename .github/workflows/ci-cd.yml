@@ -21,6 +21,10 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
 
+      - name: Find JAR file
+        id: find-jar
+        run: echo "jar_file=$(find target -name '*.jar' -type f)" >> $GITHUB_ENV
+
       - name: Deploy to Elastic Beanstalk
         uses: einaregilsson/beanstalk-deploy@v17
         with:
