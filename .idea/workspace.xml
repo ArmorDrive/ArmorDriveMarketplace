@@ -4,35 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f95150c9-60ba-4110-834c-daffa03e3ddc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/google-java-format.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/main/java/ua/com/marketplace/armordrive/ArmorDriveJavaApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ArmorDriveJava/src/test/java/ua/com/marketplace/armordrive/ArmorDriveJavaApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="f95150c9-60ba-4110-834c-daffa03e3ddc" name="Changes" comment="change database credentials from local to prod">
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArmorDriveJava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ArmorDriveJava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ArmorDriveJava/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ArmorDriveJava/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/armor_drive_react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/armor_drive_react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/armor_drive_react/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/armor_drive_react/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/armor_drive_react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/armor_drive_react/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/ArmorDriveJava" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -64,15 +60,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/workspace/ArmorDriveMarketplace/ArmorDriveJava",
+    "last_opened_file_path": "D:/workspace/practic",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -104,11 +102,92 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715809882113</updated>
-      <workItem from="1715809883922" duration="5896000" />
+      <workItem from="1715809883922" duration="29173000" />
     </task>
+    <task id="LOCAL-00001" summary="Init commit part 2, application consists of 2 different modules for frontend and back end">
+      <created>1715822003764</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715822003764</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Init commit part 3, application consists of 2 different modules for frontend and back end">
+      <created>1715822048544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715822048544</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ci-cd config for github workflow">
+      <created>1715823342291</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715823342291</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changes for triggering github workflow">
+      <created>1715823489408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715823489408</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add files to general repo">
+      <created>1715824339343</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715824339343</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add files to general repo">
+      <created>1715824592997</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715824592997</updated>
+    </task>
+    <task id="LOCAL-00007" summary="triggering github workflow">
+      <created>1715825086209</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715825086209</updated>
+    </task>
+    <task id="LOCAL-00008" summary="change database credentials from local to prod">
+      <created>1715825385936</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715825385936</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/ArmorDriveJava" />
+    </ignored-roots>
+    <MESSAGE value="Init commit part 2, application consists of 2 different modules for frontend and back end" />
+    <MESSAGE value="Init commit part 3, application consists of 2 different modules for frontend and back end" />
+    <MESSAGE value="ci-cd config for github workflow" />
+    <MESSAGE value="changes for triggering github workflow" />
+    <MESSAGE value="add files to general repo" />
+    <MESSAGE value="triggering github workflow" />
+    <MESSAGE value="change database credentials from local to prod" />
+    <option name="LAST_COMMIT_MESSAGE" value="change database credentials from local to prod" />
   </component>
 </project>
