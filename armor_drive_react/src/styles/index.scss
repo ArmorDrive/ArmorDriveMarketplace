@@ -1,0 +1,22 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  // test
+  color: $color;
+  background-color: $background;
+  @include flexCenter();
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
