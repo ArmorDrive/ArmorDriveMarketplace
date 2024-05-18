@@ -84,6 +84,7 @@
                 <configuration>
                     <outputDirectory>${basedir}/../target</outputDirectory>
                     <finalName>${project.name}-${project.version}</finalName>
+                    <mainClass>ua.com.marketplace.armordrive.ArmorDriveJavaApplication</mainClass>
                     <skip>false</skip>
                     <excludes>
                         <exclude>
