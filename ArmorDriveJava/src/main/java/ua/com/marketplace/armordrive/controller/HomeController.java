@@ -11,7 +11,7 @@ public class HomeController {
     @GetMapping("/api/welcome_message")
     @ResponseBody
     public String index() {
-        return "Welcome to Armor Drive Marketplace!";
+        return "Welcome to Armor Drive Marketplace!!!";
     }
 
 }
