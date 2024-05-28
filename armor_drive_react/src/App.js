@@ -39,7 +39,6 @@ function App() {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <div className="App-intro">
                         <h2>{message}</h2>
-                
                     </div>
                 </header>
             </div>
