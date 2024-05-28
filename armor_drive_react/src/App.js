@@ -38,7 +38,7 @@ function App() {
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo"/>
                     <div className="App-intro">
-                        <h2>{message}</h2>
+                        <h2>test : {message}</h2>
                     </div>
                 </header>
             </div>
