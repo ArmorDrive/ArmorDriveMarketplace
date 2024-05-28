@@ -5,10 +5,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  // remove in the end
+  outline: 1px solid red;
+}
+:root{
+  font-size: 10px;
+
 }
 
 body {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   // test
   color: $color;
   background-color: $background;
