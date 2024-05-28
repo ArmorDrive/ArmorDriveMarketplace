@@ -1,0 +1,9 @@
+@import './variables.scss';
+
+.App{
+    width: 100vw;
+    max-width: 1200px;
+    min-height: 100vh;
+    background: $app-bg;
+    overflow: hidden;
+}
