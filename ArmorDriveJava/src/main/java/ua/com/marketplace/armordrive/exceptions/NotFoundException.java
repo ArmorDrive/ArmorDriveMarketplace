@@ -1,4 +1,4 @@
-package ua.com.marketplace.armordrive.util;
+package ua.com.marketplace.armordrive.exceptions;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

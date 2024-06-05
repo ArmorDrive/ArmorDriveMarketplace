@@ -29,10 +29,10 @@ public class User {
     )
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String firstName;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String lastName;
 
     @Column(nullable = false, unique = true)
@@ -44,7 +44,7 @@ public class User {
     @Column(nullable = false, unique = true)
     private String phoneNumber;
 
-    @Column
+    @Column(nullable = false, unique = true)
     private Boolean ban;
 
     @Column
@@ -52,8 +52,10 @@ public class User {
 
     @Column
     private Boolean confirmed;
+
     @OneToMany(targetEntity = SaleListing.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
     private List<SaleListing> saleListings = new ArrayList<>();
+
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinTable(name = "user_favorite_salelistings",
             joinColumns =
@@ -61,6 +63,11 @@ public class User {
             inverseJoinColumns =
             @JoinColumn(name = "salelisting_id", referencedColumnName = "id"))
     private List<SaleListing> favoriteSaleListings;
+
+    public User(){
+        this.ban = false;
+        this.confirmed = false;
+    }
 
     public void addSaleListing(SaleListing saleListing) {
         saleListings.add(saleListing);
