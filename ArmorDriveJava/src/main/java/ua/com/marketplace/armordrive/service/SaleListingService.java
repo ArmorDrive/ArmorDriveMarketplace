@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 import ua.com.marketplace.armordrive.domain.SaleListing;
 import ua.com.marketplace.armordrive.model.SaleListingDTO;
 import ua.com.marketplace.armordrive.repos.SaleListingRepository;
-import ua.com.marketplace.armordrive.util.NotFoundException;
+import ua.com.marketplace.armordrive.exceptions.NotFoundException;
 
 import java.util.List;
 
