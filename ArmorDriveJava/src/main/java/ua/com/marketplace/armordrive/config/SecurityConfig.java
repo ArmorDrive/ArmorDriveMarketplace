@@ -9,10 +9,14 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.config.annotation.web.configurers.HeadersConfigurer;
 import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.servlet.handler.HandlerMappingIntrospector;
+import ua.com.marketplace.armordrive.domain.User;
+import ua.com.marketplace.armordrive.repos.UserRepository;
 
 import static org.springframework.security.config.Customizer.withDefaults;
 
@@ -46,5 +50,14 @@ public class SecurityConfig {
     @Bean
     PasswordEncoder bcryptPasswordEncoder() {
         return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public UserDetailsService userDetailsService(UserRepository userRepo) {
+        return username -> {
+            User user = userRepo.findUserByEmail(username);
+            if (user != null) return user;
+            throw new UsernameNotFoundException("User ‘" + username + "’ not found");
+        };
     }
 }
