@@ -4,6 +4,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import ua.com.marketplace.armordrive.domain.User;
+import ua.com.marketplace.armordrive.enums.Role;
 import ua.com.marketplace.armordrive.exceptions.UserAlreadyExistException;
 import ua.com.marketplace.armordrive.model.UserCreationDto;
 import ua.com.marketplace.armordrive.model.UserDTO;
@@ -53,6 +54,7 @@ public class UserService {
         newUser.setEmail(userCreationDto.email());
         newUser.setPhoneNumber(userCreationDto.phoneNumber());
         newUser.setPassword(passwordEncoder.encode(userCreationDto.password()));
+        newUser.setRole(Role.USER);
         return userRepository.save(newUser).getId();
     }
 

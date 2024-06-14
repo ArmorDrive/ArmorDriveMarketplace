@@ -42,19 +42,19 @@ public class User implements UserDetails {
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column
+    @Column(nullable = false)
     private String password;
 
     @Column(nullable = false, unique = true)
     private String phoneNumber;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private Boolean ban;
 
-    @Column
+    @Column(nullable = false)
     private Role role;
 
-    @Column
+    @Column(nullable = false)
     private Boolean confirmed;
 
     @OneToMany(targetEntity = SaleListing.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
