@@ -3,9 +3,13 @@ package ua.com.marketplace.armordrive.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
 import ua.com.marketplace.armordrive.enums.Role;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 
@@ -13,7 +17,7 @@ import java.util.List;
 @Getter
 @Setter
 @Table(name = "\"User\"")
-public class User {
+public class User implements UserDetails {
 
     @Id
     @Column(nullable = false, updatable = false)
@@ -29,31 +33,33 @@ public class User {
     )
     private Long id;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String firstName;
 
-    @Column(nullable = false, unique = true)
+    @Column(nullable = false)
     private String lastName;
 
     @Column(nullable = false, unique = true)
     private String email;
 
-    @Column
+    @Column(nullable = false)
     private String password;
 
     @Column(nullable = false, unique = true)
     private String phoneNumber;
 
-    @Column
+    @Column(nullable = false)
     private Boolean ban;
 
-    @Column
+    @Column(nullable = false)
     private Role role;
 
-    @Column
+    @Column(nullable = false)
     private Boolean confirmed;
+
     @OneToMany(targetEntity = SaleListing.class, cascade = CascadeType.ALL, fetch = FetchType.LAZY, mappedBy = "user")
     private List<SaleListing> saleListings = new ArrayList<>();
+
     @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
     @JoinTable(name = "user_favorite_salelistings",
             joinColumns =
@@ -61,6 +67,11 @@ public class User {
             inverseJoinColumns =
             @JoinColumn(name = "salelisting_id", referencedColumnName = "id"))
     private List<SaleListing> favoriteSaleListings;
+
+    public User() {
+        this.ban = false;
+        this.confirmed = false;
+    }
 
     public void addSaleListing(SaleListing saleListing) {
         saleListings.add(saleListing);
@@ -72,4 +83,34 @@ public class User {
         saleListing.setUser(null);
     }
 
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        //todo getAuthorities()
+        return List.of(new SimpleGrantedAuthority(role.toString()));
+    }
+
+    @Override
+    public String getUsername() {
+        return email;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return !ban;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return confirmed;
+    }
 }

@@ -6,6 +6,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ua.com.marketplace.armordrive.model.UserCreationDto;
 import ua.com.marketplace.armordrive.model.UserDTO;
 import ua.com.marketplace.armordrive.service.UserService;
 
@@ -34,14 +35,14 @@ public class UserResource {
 
     @PostMapping
     @ApiResponse(responseCode = "201")
-    public ResponseEntity<Long> createUser(@RequestBody @Valid final UserDTO userDTO) {
-        final Long createdId = userService.create(userDTO);
+    public ResponseEntity<Long> registerNewUser(@Valid @RequestBody final UserCreationDto userCreationDto) {
+        final Long createdId = userService.create(userCreationDto);
         return new ResponseEntity<>(createdId, HttpStatus.CREATED);
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<Long> updateUser(@PathVariable(name = "id") final Long id,
-                                           @RequestBody @Valid final UserDTO userDTO) {
+                                           @RequestBody @Valid final UserCreationDto userDTO) {
         userService.update(id, userDTO);
         return ResponseEntity.ok(id);
     }
