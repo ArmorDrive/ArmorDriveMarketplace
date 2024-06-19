@@ -50,7 +50,7 @@ public class User implements UserDetails {
 
     @Column(nullable = false)
     private Boolean ban;
-
+    //todo: can user have few roles?
     @Column(nullable = false)
     private Role role;
 
@@ -86,7 +86,7 @@ public class User implements UserDetails {
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         //todo getAuthorities()
-        return List.of(new SimpleGrantedAuthority(role.toString()));
+        return List.of(new SimpleGrantedAuthority("ROLE_" + role.toString()));
     }
 
     @Override
@@ -111,6 +111,8 @@ public class User implements UserDetails {
 
     @Override
     public boolean isEnabled() {
-        return confirmed;
+        //todo: implement account confirmation via email
+        //return confirmed;
+        return true;
     }
 }
